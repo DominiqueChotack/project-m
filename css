@@ -1,0 +1,154 @@
+html {
+  height: 100%;
+  width: 100%;
+  background-color:dimgray;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.tab-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: bold;
+  color: orange;
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 2%;
+}
+
+.filter-dropdown {
+  display: flex;
+  align-items: center;
+  margin-left: 28%;
+  font-family: 'Times New Roman', Times, serif;
+  color: orange;
+}
+
+.filter-dropdown label {
+  margin-left:80%;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color:grey;
+}
+
+.search-bar input[type="text"] {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.search-bar button {
+  background-color:grey;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.search-bar button:focus {
+  outline: none;
+}
+
+.tab-text {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  margin-left: 5%;
+}
+
+select,
+button {
+  background-color: dimgray;
+  border: none;
+  color:lightgray;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+select:focus,
+button:focus {
+  outline: none;
+}
+
+#genreFilter {
+  margin-right: 10px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color:#848884;
+}
+
+.card {
+  width: calc(20% - 20px); 
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color:dimgray;
+  border-radius: 5px;
+}
+
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card h3 {
+  margin-top: 10px;
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.card p {
+  margin: 5px 0;
+  font-size: 14px;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+.card:hover {
+    background-color:#7393B3;
+}
+
+
+@media only screen and (max-width: 600px) {
+ 
+  .tab-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tab-text {
+    max-width: 90%; 
+  }
+  .search-bar,
+  #genreFilter {
+    display: block;
+    margin: 10px auto; 
+  }
+/
+  @media only screen and (max-width: 600px) {
+    .search-bar,
+    #genreFilter {
+      width: 100%;
+    }
+
+    .card {
+      width: calc(49% - 20px); 
+    }
+  }
+
+}
