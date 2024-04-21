@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="top-tab">
+    <div class="tab-content">
+      <div class="title">film sphere</div>
+      <button onclick="showAllGames()">Home</button>
+      <div class="filter-dropdown">
+        <label for="genreFilter"></label>
+        <select id="genreFilter" onchange="filterByGenre()">
+          <option value="">All Genres</option>
+          <option value="Drama">Drama</option>
+          <option value="Comedy">Comedy</option>
+          <option value="Action">Action</option>
+          <option value="Adventure">Adventure</option>
+          <option value="Romance">Romance</option>
+          <option value="Horror">Horror</option>
+          <option value="Thriller">Thriller</opiton>
+          <option value="Fantasy">Fantasy</option>
+     
+        </select>
+      </div>
+      <div class="search-bar">
+        <input type="text" id="searchKey" placeholder="Search by title..." onkeyup="handleSearch(event)">
+        <button onclick="search()">Search</button>
+      </div>
+    </div>
+  </div>  
+  <div id="container" class="card-container"></div>
+  <script src="script.js"></script> 
+</body>
+
+</html>
