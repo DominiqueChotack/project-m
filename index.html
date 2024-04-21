@@ -36,7 +36,32 @@
     </div>
   </div>  
   <div id="container" class="card-container"></div>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+
+  import { getAuth,createUserWithEmailandPassword,signInWithEmailandPassword} from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app-auth.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyAZjP9Hwh1d2FvpxI4y28QE3Y_kEzXdbzc",
+    authDomain: "fir-56363.firebaseapp.com",
+    projectId: "fir-56363",
+    storageBucket: "fir-56363.appspot.com",
+    messagingSenderId: "216853932272",
+    appId: "1:216853932272:web:fb111736b0babccf62fa35"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const Auth=getAuth();
+</script>
+
+  
   <script src="script.js"></script> 
 </body>
 
 </html>
+
